@@ -106,7 +106,22 @@ public class MainActivity extends AppCompatActivity {
                             sTransaksiJumlahRoti = (TextView) dialView.findViewById(R.id.sTransaksiJumlahRoti);
                             sTransaksiHargaRoti = (TextView) dialView.findViewById(R.id.sTransaksiHargaRoti);
 
-//                            sTransaksiIdNota.setText();
+                            sTransaksiIdNota.setText(idnota);
+                            sTransaksi.setText(tglTransaksi);
+                            sTransaksijatuhTempo.setText(tglJatuhTempo);
+                            sTransaksiNamaOutlet.setText(namaoutlet);
+                            sTransaksiNamaSales.setText(namaSales);
+                            sTransaksiNominalPembayaran.setText(nominalpembayaran);
+                            sTransaksiJumlahPembayaran.setText(jumlahpembayaran);
+                            sTransaksiHutangPembayaran.setText(hutangpembayaran);
+                            sTransaksiAksiTransaksi.setText(aksipembayaran);
+                            sTransaksiIndexTransaksi.setText(indextransaksi);
+                            sTransaksiNamaRoti.setText(namaroti);
+                            sTransaksiJumlahRoti.setText(jumlahroti);
+                            sTransaksiHargaRoti.setText(hargarot);
+
+                            builder.setView(dialView);
+                            builder.show();
 
 
                             Toast.makeText(MainActivity.this, "date  : " + eventList.get(i).getStrName(), Toast.LENGTH_SHORT).show();
